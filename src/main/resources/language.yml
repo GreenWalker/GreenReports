@@ -1,0 +1,64 @@
+# _____                _          _                     _
+#|  ___|              (_)        | |                   | |
+#| |__ _ __ ___  _ __  _ _ __ ___| |     __ _ _ __   __| |___
+#|  __| '_ ` _ \| '_ \| | '__/ _ \ |    / _` | '_ \ / _` / __|
+#| |__| | | | | | |_) | | | |  __/ |___| (_| | | | | (_| \__ \
+#\____/_| |_| |_| .__/|_|_|  \___\_____/\__,_|_| |_|\__,_|___/
+#               | |
+#               |_|
+
+prefix: '&f[&2Empire&6Reports&f]'
+
+#------ Display do nome dos Menus -------
+# Nao utilize nome para os menus maiores que 32 chars. Simbolos '&' e espaços tambem contam
+# Caso ultrapasse, sera lancada uma execao 'IllegalArgumentException'
+Menus:
+ Staff-Perfil: '&bPerfil de &c%player%'
+ Player-Perfil: '&bPerfil de &c%player%'
+ Report-Menu: '&cReporte o %player%'
+ Report-User: '&cReports do player'
+ Reports-Menu: '&dPlayers Reportados #%quant%'
+ Report-Options: '&dReport: &f&l&o%reportid%'
+
+#------ Display dos Itens nos Menus -------
+
+Skull:
+ skull-name: '&c%player% &7(%reported-online%&7)'
+ skull-lore:
+  - '&7Denúncias relacionadas: &f%reports%'
+  - ' '
+  - '&7Motivo da ultima denúncia: &f%lastreason%'
+  - '&7Player que reportou: &f%player-reporter% &7(%reporter-online%&7)'
+  - '&7Já deslogou: %already-logout%'
+
+indice: '&8%atual%&7/&c%total%'
+Proxima-Pagina: '&6Próxima página %indice%'
+Pagina-Anterior: '&6Página anterior %indice%'
+
+Item-report: '&cReportar %player% por &5%reason%'
+Item-report-lore:
+ - ''
+#------ Mensagens Para o Player -------
+
+Invalid-Player: '%prefix% &cPlayer não encontrado.'
+Need-Player-Online: '%prefix% &cEste Player não existe, ou não está online.'
+New-report-created:
+ - '                         &bNovo &3&lReport &bRecebido!'
+ - '                          &bReportador: &f%reporter%'
+ - '                           &bReportado: &f%reported%'
+ - '                            &bMotivo: &f%motive%'
+ - '                           &bReport &3&lID&b: &f%reportid%'
+Already-reported: '%prefix% &cVocê já reportou este player!'
+Reported-By: '%prefix% &cVocê reportou %player% por %reason%.'
+Not-Reported: '%prefix% &cEste player não possuí nenhum report.'
+Without-Proof: '%prefix% &cVocê não apresentou nenhuma prova, caso queira uma solução mais rápida apresente uma.'
+Without-Account: '%prefix% &cVocê não tem uma conta.'
+Target-Without-Account: '%prefix% &cEste player não possuí uma conta.'
+Need-Permission: '%prefix% &cVocê não tem permissão para utilizar este comando.'
+Need-Report: '%prefix% &cVocê não pode utilizar este comando sem antes ter reportador alguém.'
+Past-Proof-In-Chat: '%prefix% &cCole a prova no chat, caso não tenha digite &ecancelar&c'
+Player-Bypass: '%prefix% &cVocê não pode reportar este player.'
+Input-Ban-Command: '%prefix% &cDigite o comando para banir o(a) jogador(a) &e%player%'
+dont-report-you-self: '%prefix% &cVocê não pode reportar a si próprio.'
+Report-Closed: '%prefix% &aVocê &cfechou &ao reporte &f%id%'
+Player-Already-Banned: '%prefix% &cVocê não pode reportar um jogador que já foi &lbanido&r&c!'

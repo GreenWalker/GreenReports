@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="craftbukkit-1.8-R0.1-SNAPSHOT-b5">
+    <CLASSES>
+      <root url="jar://C:/Servidores/Client Server/craftbukkit-1.8-R0.1-SNAPSHOT-b5.jar!/" />
+      <root url="jar://C:/Servidores/Client Server/craftbukkit-1.8.3-R0.1-SNAPSHOT-latest (1).jar!/" />
+      <root url="jar://C:/Servidores/Client Server/craftbukkit-1.8.8-R0.1-SNAPSHOT-latest.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://C:/Servidores/Client Server/craftbukkit-1.8-R0.1-SNAPSHOT-b5.jar!/" />
+      <root url="jar://C:/Servidores/Client Server/craftbukkit-1.8.3-R0.1-SNAPSHOT-latest (1).jar!/" />
+      <root url="jar://C:/Servidores/Client Server/craftbukkit-1.8.8-R0.1-SNAPSHOT-latest.jar!/" />
+    </SOURCES>
+  </library>
+</component>

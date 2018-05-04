@@ -1,0 +1,83 @@
+#################################
+# -#-#-#-#-#-#-#-#-#-#-#-#-#-#- #
+#                               #
+#  Plugin feito por Floydz69    #
+#   Qualquer bug, exception     #
+#  Ou erro qualquer que seja    #
+# Favor contatar-me de imediato #
+#   Para evitar qualqualquer    #
+#  Transtorno na jogatina do    #
+#           Player              #
+#         Have Fun xD !         #
+# -#-#-#-#-#-#-#-#-#-#-#-#-#-#- #
+#################################
+debug: true
+
+# Plugin feito com suporte a UTF-8, então pode-se utilizar acentos
+# Em todas as mensagens presentes aqui e em language.yml
+
+# Conexão com o banco de dados necessária
+host: '127.0.0.1 '    # IP de conexão ao banco de dados
+usuario: 'root'       # Usuario do banco de dados
+senha: 'root'         # Senha do banco de dados
+porta: '3306'         # Porta de conexão
+servidor: 'database'  # Banco de dados no qual será salva as tabelas
+
+# Tempo em que players normais iram levar para criar um novo report
+# Em Segundos
+Tempo-Para-Novo-Report: 60 # 5 minutos
+
+# Ao player digitar /reportar <Player>; carregar os reports disponivels
+# Em JSON no chat, ou por itens em um Menu?
+# true = Chat; false = Menu
+Chat-Ou-Menu: true
+
+enable-effects-on-logout: true
+
+teleport-player-to-jail-on-logout: true
+jail-cmd: '/jail %player% 6'
+
+# Defina as mensagens aqui, e em cada razao definida, apenas coloque o numero da mensagem
+# %razao% sera substituido pelo nome da razão na qual estiver citado
+# modelo: - '1, &cMensagem'
+# Simbolos que podem ser usados nas mensagens em symbols.txt
+pre-messages:
+ - '1; &bReporte o player por &c&o%razao%'
+ - '2; &eReporte o player por &6&o%razao%'
+ - '3; &6Clique &7para reportar o jogador por &c&o%razao%'
+
+# Razões disponíveis
+Razoes:
+ KillAura: # Nome que ficara visivel no menu ou na mensagem de report
+  Alias: # Outros nomes relacionados a razão
+   - 'kill'
+   - 'aura'
+   - 'ka'
+   - 'kill-aura'
+   - 'force-field'
+   - 'forcefield'
+   - 'ff'
+  Menu: # Caso o display seja pelo Menu, Item que representará a razão
+   item: 'DIAMOND_SWORD' # Não utilize items repetidos! Lista de todos os itens aqui: http://minecraft-ids.grahamedgecombe.com/
+  Json: # Caso o display seja por mensagem, Configurações da mensagem
+   mensagem: 1 # index da mensagem em 'pre-messages'
+   hover-message:
+    ativado: true # Ao passar o mouse sobre a mensagem, mostrar outra mensagem?
+    mensagem: 3 # index da mensagem em 'pre-messages'
+   run-cmd:
+    ativado: true # Ao clicar sobre a mensagem, executar um comando?
+    cmd: '/reportar %player% kill-aura' # Comando
+ # Modelo
+ Razao:
+  Alias:
+   - ''
+  Menu:
+   item:
+  json:
+   mensagem:
+   hover-message:
+    ativado:
+    mensagem:
+   run-cmd:
+    ativado:
+    cmd:
